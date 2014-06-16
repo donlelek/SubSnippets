@@ -1,0 +1,13 @@
+<snippet>
+        <content><![CDATA[
+foreach cat in 1 2 3 4 {
+        xtline myvar if cat==`cat', t(time_var) i(id_var) overlay       ///
+        nodraw saving(g`cat', replace) title("Group `cat'")
+}
+graph combine g1.gph g2.gph g3.gph g4.gph  
+]]></content>
+        <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+        <tabTrigger>profile</tabTrigger>
+        <!-- Optional: Set a scope to limit where the snippet will trigger -->
+        <scope>source.stata</scope>
+</snippet>

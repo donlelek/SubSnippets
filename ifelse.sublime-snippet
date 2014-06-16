@@ -1,0 +1,17 @@
+<snippet>
+        <content><![CDATA[
+if      condition=1 {
+        di "commands to execute if condition1 is true..."
+        }
+                else if condition=2 {
+                di"commands to execute if condition one is false and condition2 is true..."
+                }
+                        else {
+                        di "commands to execute if both condition1 and condition2 are false..."
+} 
+]]></content>
+        <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+        <tabTrigger>ifelse</tabTrigger>
+        <!-- Optional: Set a scope to limit where the snippet will trigger -->
+        <scope>source.stata</scope>
+</snippet>

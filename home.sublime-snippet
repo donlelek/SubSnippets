@@ -1,0 +1,14 @@
+<snippet>
+        <content><![CDATA[
+if "`c(os)'" == "Windows" {
+        global home="C:/Users/default.SIDxxxxx/Dropbox/"
+                }
+                else {
+                global home="~/Dropbox/"
+}
+]]></content>
+        <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+        <tabTrigger>home</tabTrigger>
+        <!-- Optional: Set a scope to limit where the snippet will trigger -->
+        <scope>source.stata</scope>
+</snippet>

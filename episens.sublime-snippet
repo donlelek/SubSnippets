@@ -1,0 +1,33 @@
+<snippet>
+	<content><![CDATA[
+* Replace "value"		
+local disease  =value // Disease Variable
+local exposure =value // Exposure Variable
+
+* Misclassification of the exposure
+local se1=value // define the sensitivity among the cases
+local se2=value // define the sensitivity among the noncases
+local sp1=value // define the specificity among the cases
+local sp2=value // define the specificity among the noncases
+
+* Selection bias
+local cex=value // define the selection probability among cases exposed
+local cun=value // define the selection probability among cases unexposed
+local nex=value // define the selection probability among noncases exposed
+local nun=value // define the selection probability among noncases unexposed
+
+* Uncontrolled confounding
+local prc =value // define the prevalence of the confounder among the unexposed
+local ceor=value // define the confounder-exposure odds ratio
+local cdrr=value // define the confounder-disease relative risk
+
+episens `disease' `exposure', combined study(cc) ///
+	dseca(c(`se1')) dsenc(c(`se2')) dspca(c(`sp1')) dspnc(c(`sp2')) ///
+	dpscex(c(`cex')) dpscun(c(`cun')) dpsnex(c(`nex')) dpsnun(c(`nun')) ///
+	dpunexp(c(`prc')) dorce(c(`ceor')) drrcd(c(`cdrr')) 
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>episens</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.stata</scope>
+</snippet>

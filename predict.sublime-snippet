@@ -1,0 +1,21 @@
+<snippet>
+        <content><![CDATA[
+capture drop pred
+capture drop res
+capture drop reff1
+
+predict pred, fitted
+predict res, rstandard
+predict reff*, reffects 
+
+bysort id: gen num=_n
+
+scatter res pred
+qnorm res
+qnorm reff1 if num==1
+]]></content>
+        <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+        <tabTrigger>predict</tabTrigger>
+        <!-- Optional: Set a scope to limit where the snippet will trigger -->
+        <scope>source.stata</scope>
+</snippet>

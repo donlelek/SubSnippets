@@ -1,0 +1,10 @@
+<snippet>
+        <content><![CDATA[
+label define mylabel 1 "one" 2 "two" 3 "three"
+label values myvar mylabel
+]]></content>
+        <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+        <tabTrigger>label</tabTrigger>
+        <!-- Optional: Set a scope to limit where the snippet will trigger -->
+        <scope>source.stata</scope>
+</snippet>

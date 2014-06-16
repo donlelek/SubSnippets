@@ -1,0 +1,12 @@
+<snippet>
+        <content><![CDATA[
+/* Imports sheet source from yourexcelfile.xlsx and use first row as header */
+clear
+import excel yourexcelfile.xlsx, ///
+        sheet("source") firstrow 
+]]></content>
+        <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+        <tabTrigger>excel</tabTrigger>
+        <!-- Optional: Set a scope to limit where the snippet will trigger -->
+        <scope>source.stata</scope>
+</snippet>

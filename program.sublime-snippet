@@ -1,0 +1,12 @@
+<snippet>
+        <content><![CDATA[
+capture program drop myprogram 
+program define myprogram
+        di "this is my program"
+end
+]]></content>
+        <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+        <tabTrigger>program</tabTrigger>
+        <!-- Optional: Set a scope to limit where the snippet will trigger -->
+        <scope>source.stata</scope>
+</snippet>

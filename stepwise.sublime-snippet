@@ -1,0 +1,14 @@
+<snippet>
+        <content><![CDATA[
+/* stepwise predictor selection */
+local variables ="dependant indep1 indep2 etc"
+xi: vselect `variables', best
+xi: stepwise, pe(0.1): regress `variables'
+xi: stepwise, pr(0.1): regress `variables'
+xi: stepwise, pe(0.1) pr(0.11): regress `variables'
+]]></content>
+        <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+        <tabTrigger>step</tabTrigger>
+        <!-- Optional: Set a scope to limit where the snippet will trigger -->
+        <scope>source.stata</scope>
+</snippet>
