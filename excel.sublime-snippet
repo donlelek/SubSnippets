@@ -2,8 +2,8 @@
         <content><![CDATA[
 /* Imports sheet source from yourexcelfile.xlsx and use first row as header */
 clear
-import excel yourexcelfile.xlsx, ///
-        sheet("source") firstrow 
+import 	excel yourexcelfile.xlsx, ///
+        sheet("Sheet1") firstrow 
 ]]></content>
         <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
         <tabTrigger>excel</tabTrigger>

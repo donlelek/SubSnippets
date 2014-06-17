@@ -1,11 +1,14 @@
 <snippet>
         <content><![CDATA[
 if "`c(os)'" == "Windows" {
-        global home="C:/Users/default.SIDxxxxx/Dropbox/"
+        global home="C:/Users/your.user.name/"
                 }
                 else {
-                global home="~/Dropbox/"
+                global home="~"	//works for OSX and Linux
 }
+
+cd "${home}/path/to/your/poject/"
+
 ]]></content>
         <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
         <tabTrigger>home</tabTrigger>
