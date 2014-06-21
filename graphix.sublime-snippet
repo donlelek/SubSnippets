@@ -1,9 +1,13 @@
 <snippet>
 	<content><![CDATA[
-\includegraphics[width=0.5\textwidth]{$SELECTION}
+\begin{figure}[htb]
+\includegraphics[width=1\columnwidth]{$SELECTION}
+\caption{{\small{Some text for your figure}}} 
+\label{fig:somelabel}
+\end{figure}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>graphix</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.latex</scope>
+	<scope>source.LaTeX</scope>
 </snippet>
