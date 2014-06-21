@@ -14,3 +14,8 @@ A collection of my SublimeText3 Snippets, mostly for **Stata**
 - *program* - syntax to define a *program* or sub-routine within a do file
 - *stepwise* - syntax to run stepwise selection ( forward , backward , both )
 - *string* - find string variables and replace them for categorical
+
+some LaTeX
+----------
+
+- *graphix* - a snippet for ```\includegraphics``` within a *figure* environment
