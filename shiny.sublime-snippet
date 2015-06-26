@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+library(shiny)
+
+ui <- fluidPage(
+        sliderInput(inputId = "num",
+                    label = "Choose a number",
+                    value = 25, min = 1, max = 100),
+        plotOutput("hist")
+      ) 
+
+server <- function(input, output){
+          output$hist <- renderPlot({
+            hist(rnorm(input$num))
+            })
+          }
+	
+shinyApp(ui = ui, server = server)
+
+# save this as "app.R"
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>shiny</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.R</scope>
+</snippet>
